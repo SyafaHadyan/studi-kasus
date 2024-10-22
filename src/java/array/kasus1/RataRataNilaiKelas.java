@@ -9,10 +9,11 @@ public class RataRataNilaiKelas
         Scanner input = new Scanner(System.in);
         System.out.printf("%-30s%-2c","Masukkan jumlah siswa",':');
         int studentAmount = Integer.parseInt(input.nextLine());
+        double[] studentGrade = new double[studentAmount];
         for (int i = 0; i < studentAmount; i++)
         {
             System.out.printf("%-30s%c%d%-2c","Masukkan nilai siswa ke",'-',(i + 1),':');
-            //
+            studentGrade[i] = Double.parseDouble(input.nextLine());
         }
         input.close();
     }
