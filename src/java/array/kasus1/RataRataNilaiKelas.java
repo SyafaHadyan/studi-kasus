@@ -1,4 +1,4 @@
-package java.array.kasus1;
+//package java.array.kasus1;
 import java.util.*;
 import java.util.stream.*;
 
@@ -12,7 +12,7 @@ public class RataRataNilaiKelas
         double[] studentGrade = new double[studentAmount];
         for (int i = 0; i < studentAmount; i++)
         {
-            System.out.printf("%-30s%c%d%-2c","Masukkan nilai siswa ke",'-',(i + 1),':');
+            System.out.printf("%s%c%d%-2c","Masukkan nilai siswa ke",'-',(i + 1),':');
             studentGrade[i] = Double.parseDouble(input.nextLine());
         }
         input.close();
