@@ -23,7 +23,9 @@ public class RataRataNilaiKelas
             if (studentGrade.length - i != 1)
             {
                 System.out.print("\n");
+                continue;
             }
+            System.out.printf("\n%-30s%-2c%d\n%-30s%-2c%.3f","Total banyak siswa",':',(studentGrade.length + 1),"Rata-rata nilai kelas",':',(DoubleStream.of(studentGrade).sum() / studentGrade.length));
         }
     }
 }
